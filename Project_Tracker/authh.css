@@ -1,0 +1,152 @@
+/* Reset & Base Styles */
+* {
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #ede7f6, #f3e5f5);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Container */
+  .container {
+    background: #ffffff;
+    padding: 50px 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(103, 58, 183, 0.2);
+    width: 400px;
+    max-width: 95%;
+    text-align: center;
+  }
+  
+  /* Heading */
+  h2 {
+    margin-bottom: 30px;
+    color: #6a1b9a;
+    font-size: 2rem;
+    letter-spacing: 1px;
+  }
+  
+  /* Forms */
+  .form-section {
+    display: none;
+    flex-direction: column;
+    text-align: left;
+  }
+  
+  .form-section.active {
+    display: flex;
+    animation: fadeIn 0.4s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Labels */
+  label {
+    margin: 10px 0 6px;
+    font-weight: 600;
+    color: #4a148c;
+  }
+  
+  /* Inputs & Selects */
+  input,
+  select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border: 2px solid #d1c4e9;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  input:focus,
+  select:focus {
+    border-color: #8e24aa;
+    box-shadow: 0 0 5px #ce93d8;
+  }
+  
+  /* Button */
+  button[type="submit"] {
+    background: linear-gradient(to right, #8e24aa, #6a1b9a);
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 14px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    box-shadow: 0 6px 15px rgba(142, 36, 170, 0.4);
+  }
+  
+  button[type="submit"]:hover {
+    background: linear-gradient(to right, #6a1b9a, #4a148c);
+    transform: translateY(-2px);
+  }
+  
+  /* Switch Link */
+  .form-switch-link {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  .form-switch-link a {
+    color: #6a1b9a;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  
+  .form-switch-link a:hover {
+    color: #4a148c;
+    text-decoration: underline;
+  }
+  
+  /* Student Fields Animation */
+  #studentFields {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.4s ease;
+  }
+  
+  #studentFields.visible {
+    max-height: 500px;
+    opacity: 1;
+  }
+  
+  /* Responsive */
+  @media screen and (max-width: 480px) {
+    .container {
+      padding: 30px 20px;
+    }
+  
+    h2 {
+      font-size: 1.7rem;
+    }
+  
+    button[type="submit"] {
+      font-size: 15px;
+    }
+  }
+  

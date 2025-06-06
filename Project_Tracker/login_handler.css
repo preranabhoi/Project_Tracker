@@ -1,0 +1,86 @@
+/* Basic reset */
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #eef2f3;
+    padding: 40px 20px;
+    max-width: 400px;
+    margin: 0 auto;
+    color: #333;
+  }
+  
+  /* Container for the form */
+  form {
+    background: white;
+    padding: 25px 20px;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+  }
+  
+  /* Headings */
+  h2 {
+    margin-bottom: 15px;
+    color: #333;
+    text-align: center;
+  }
+  
+  /* Labels */
+  label {
+    display: block;
+    margin-top: 15px;
+    font-weight: 600;
+    color: #444;
+  }
+  
+  /* Inputs */
+  input[type="email"],
+  input[type="password"],
+  select {
+    width: 100%;
+    padding: 10px 12px;
+    margin-top: 8px;
+    border: 1.5px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: border-color 0.3s ease;
+  }
+  
+  input[type="email"]:focus,
+  input[type="password"]:focus,
+  select:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 6px rgba(0,123,255,0.4);
+  }
+  
+  /* Submit button */
+  button[type="submit"] {
+    margin-top: 25px;
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 14px 0;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Error messages */
+  p.error {
+    color: #d32f2f;
+    font-weight: 600;
+    margin-top: 15px;
+    text-align: center;
+  }
+  
